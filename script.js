@@ -1,6 +1,4 @@
-// DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation toggle for mobile
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close mobile menu when clicking on a link
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -20,16 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Project filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
@@ -44,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form submission with Formspree (UPDATED)
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
@@ -56,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = formData.get('email');
             const message = formData.get('message');
             
-            // Basic validation
             if (!name || !email || !message) {
                 alert('Please fill in all fields');
                 return;
@@ -65,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const submitButton = this.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
             
-            // Show loading state
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
             
@@ -87,14 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (error) {
                 alert('Sorry, there was an error sending your message. Please email me directly at deepthimahendran81@gmail.com');
             } finally {
-                // Reset button state
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
             }
         });
     }
     
-    // Navbar background on scroll
     window.addEventListener('scroll', function() {
         const navbar = document.getElementById('navbar');
         if (window.scrollY > 50) {
@@ -106,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -124,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add animation on scroll
     function animateOnScroll() {
         const elements = document.querySelectorAll('.skill-category, .project-card, .contact-info, .contact-form');
         
@@ -139,14 +125,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Set initial state for animation
     document.querySelectorAll('.skill-category, .project-card, .contact-info, .contact-form').forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     });
     
-    // Run animation on load and scroll
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
 });
