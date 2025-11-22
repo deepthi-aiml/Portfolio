@@ -1,1111 +1,923 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepthi Mahendran | Full-Stack Developer & AI Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Deepthi</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai">AI/ML & Python</button>
+            <button class="filter-btn" data-filter="data">Data Visualization</button>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Paul Mahendran Deepthi</h1>
-                <h2 class="hero-subtitle">Full-Stack Developer & AI Enthusiast</h2>
-                <p class="hero-description">Building innovative web solutions and exploring the frontiers of artificial intelligence.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <div class="projects-grid">
+            <!-- Web Development Projects -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/lail.png" alt="Institute of AI and Innovation Website">
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-code"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer with a strong foundation in web technologies and a growing interest in artificial intelligence and machine learning. I enjoy creating responsive, user-friendly applications and exploring how AI can solve real-world problems.</p>
-                    <p>My technical journey includes building full-stack web applications, developing interactive interfaces, and working with data visualization tools. I'm constantly learning new technologies and expanding my skill set to stay at the forefront of web development and AI innovation.</p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <strong>Location:</strong> Colombo, Sri Lanka
-                        </div>
-                        <div class="detail-item">
-                            <strong>Email:</strong> deepthimahendran81@gmail.com
-                        </div>
-                        <div class="detail-item">
-                            <strong>Languages:</strong> English, Tamil, Sinhala (basic)
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-code"></i>
-                        Web Development
-                    </h3>
-                    <div class="skill-items">
-                        <div class="skill-item">HTML5</div>
-                        <div class="skill-item">CSS3</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">PHP</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Git & GitHub</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-brain"></i>
-                        AI/ML & Data Science
-                    </h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">AI/ML Fundamentals</div>
-                        <div class="skill-item">Data Visualization</div>
-                        <div class="skill-item">SQLite</div>
-                        <div class="skill-item">SQL & NoSQL</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-tools"></i>
-                        Tools & Platforms
-                    </h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Microsoft Office</div>
-                        <div class="skill-item">Google Workspace</div>
-                        <div class="skill-item">Vercel</div>
-                        <div class="skill-item">AI Tools</div>
-                        <div class="skill-item">Markdown</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="ai">AI/ML & Python</button>
-                <button class="filter-btn" data-filter="data">Data Visualization</button>
-            </div>
-            <div class="projects-grid">
-                <!-- Web Development Projects -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/lail.png" alt="Institute of AI and Innovation Website" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Institute of AI and Innovation</h3>
-                        <p class="project-description">Educational website built with HTML, CSS, JS, PHP and deployed on Vercel.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">PHP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-iaii.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-IAII.git" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Cat-Translator.png" alt="Cat Language Translator" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-cat"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Cat Language Translator</h3>
-                        <p class="project-description">Fun web application that translates human language to cat sounds.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-purr-translation.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Purr-Translation" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Customer-feedback-survey.png" alt="Customer Feedback Survey" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-poll"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Customer Feedback Survey</h3>
-                        <p class="project-description">Responsive survey form for collecting customer feedback.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-feed-back-survey.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-FeedBackSurvey.git" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Technical-documentation.png" alt="Technical Documentation" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-book"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Technical Documentation</h3>
-                        <p class="project-description">Technical documentation page with responsive design.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-documentation.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Documentation" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Product-page.png" alt="Product Landing Page" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Product Landing Page</h3>
-                        <p class="project-description">E-commerce product landing page with modern design.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-product-page.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Product-Page" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Decoder.png" alt="Caesars Cipher" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Caesars Cipher</h3>
-                        <p class="project-description">Decoder application implementing Caesar cipher algorithm.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-decoder.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Decoder" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Calculator.png" alt="JavaScript Calculator" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">JavaScript Calculator</h3>
-                        <p class="project-description">Interactive calculator built with vanilla JavaScript.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-calculator.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Calculator" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Dungeon-crawler.png" alt="Dungeon Crawler Game" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-dungeon"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dungeon Crawler Game</h3>
-                        <p class="project-description">Roguelike dungeon crawler game with interactive gameplay.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-projects-dungeon-crawler.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Projects-Dungeon-Crawler" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Roman-number-convertor.png" alt="Roman Numeral Converter" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-sort-numeric-down"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Roman Numeral Converter</h3>
-                        <p class="project-description">Convert numbers to Roman numerals and vice versa.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-roman-number-convert.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Roman-Number-Converter" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Drum-machine.png" alt="Drum Machine" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-drum"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Drum Machine</h3>
-                        <p class="project-description">Interactive drum machine with multiple sound samples.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-drum-machine.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Drum-Machine" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Random-quote.png" alt="Random Quote Machine" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Random Quote Machine</h3>
-                        <p class="project-description">Generate random inspirational quotes with share functionality.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-random-quote.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Random-Quote" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Pomodoro.png" alt="25 + 5 Clock (Pomodoro)" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">25 + 5 Clock (Pomodoro)</h3>
-                        <p class="project-description">Pomodoro timer for productivity with session breaks.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-pomodoro.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Pomodoro" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Weather-app.png" alt="Local Weather App" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Local Weather App</h3>
-                        <p class="project-description">Weather application showing local weather conditions.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-weather-app.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Weather-App" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Twitch-stream.png" alt="TwitchTV JSON API" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tv"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">TwitchTV JSON API</h3>
-                        <p class="project-description">Application using TwitchTV API to show stream information.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-twitch-stream.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Twitch-stream" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Home-page.png" alt="freeCodeCamp Forum" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fab fa-free-code-camp"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">freeCodeCamp Forum</h3>
-                        <p class="project-description">Forum homepage clone for freeCodeCamp community.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-home-page.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-HomePage" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Tac-tic-toe.png" alt="Tic Tac Toe Game" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-times-circle"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Tic Tac Toe Game</h3>
-                        <p class="project-description">Classic Tic Tac Toe game with interactive gameplay.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-tac-tic-toe.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Tac-tic-toe" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Memory-Game.png" alt="Memory Light Game" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-memory"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Memory Light Game</h3>
-                        <p class="project-description">Memory game with light patterns and sequence matching.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-memory-game.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-memory-Game" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Markdown-Previewer.png" alt="Markdown Previewer" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fab fa-markdown"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Markdown Previewer</h3>
-                        <p class="project-description">Real-time Markdown to HTML preview application.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-markdown-previewer.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Markdown-Previewer" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Recipe-box.png" alt="Recipe Box" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Recipe Box</h3>
-                        <p class="project-description">Recipe management application with storage functionality.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-recipe-box.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Recipe-Box" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="images/Video-call.png" alt="Video Call Web App" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-video"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Video Call Web App</h3>
-                        <p class="project-description">WebRTC-based video calling application.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">WebRTC</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://my-web-project-video-call.vercel.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/deepthi-aiml/My-Web-Project-Video-Call" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Visualization Projects -->
-                <div class="project-card" data-category="data">
-                    <div class="project-image">
-                        <img src="images/Bar-graph.png" alt="Bar Chart Visualization" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Bar Chart Visualization</h3>
-                        <p class="project-description">Data visualization using D3.js to create interactive bar charts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://codepen.io/Deepthi-Mahendran/pen/OPNbdQg" class="project-link" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                                View on CodePen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="data">
-                    <div class="project-image">
-                        <img src="images/Scatter-plot.png" alt="Scatterplot Graph" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-scatter"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Scatterplot Graph</h3>
-                        <p class="project-description">Interactive scatterplot graph for data analysis and visualization.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://codepen.io/Deepthi-Mahendran/pen/VYamgda" class="project-link" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                                View on CodePen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="data">
-                    <div class="project-image">
-                        <img src="images/Heat-map.png" alt="Heat Map Visualization" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Heat Map Visualization</h3>
-                        <p class="project-description">Heat map representation of data using color gradients.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://codepen.io/Deepthi-Mahendran/pen/bNpBzxL" class="project-link" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                                View on CodePen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="data">
-                    <div class="project-image">
-                        <img src="images/Choropleth-map.png" alt="Choropleth Map" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-map"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Choropleth Map</h3>
-                        <p class="project-description">Geographical data visualization using choropleth mapping technique.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://codepen.io/Deepthi-Mahendran/pen/ByKQMMJ" class="project-link" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                                View on CodePen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="data">
-                    <div class="project-image">
-                        <img src="images/Tree-map.png" alt="Treemap Diagram" onerror="this.style.display='none'">
-                        <div class="image-placeholder">
-                            <i class="fas fa-sitemap"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Treemap Diagram</h3>
-                        <p class="project-description">Hierarchical data visualization using treemap diagrams.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://codepen.io/Deepthi-Mahendran/pen/VYamgoP" class="project-link" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                                View on CodePen
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI/ML & Python Projects -->
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Arithmetic Formatter</h3>
-                        <p class="project-description">Python program to format arithmetic problems for easy reading.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-an-arithmetic-formatter-project/build-an-arithmetic-formatter-project" class="project-link" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                                FreeCodeCamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Time Calculator</h3>
-                        <p class="project-description">Python application to calculate time durations and conversions.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-time-calculator-project/build-a-time-calculator-project" class="project-link" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                                FreeCodeCamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Budget App</h3>
-                        <p class="project-description">Python application for personal budget tracking and management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-budget-app-project/build-a-budget-app-project" class="project-link" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                                FreeCodeCamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shapes"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Polygon Area Calculator</h3>
-                        <p class="project-description">Python program to calculate areas of various geometric shapes.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-polygon-area-calculator-project/build-a-polygon-area-calculator-project" class="project-link" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                                FreeCodeCamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Probability Calculator</h3>
-                        <p class="project-description">Python application for calculating probabilities in various scenarios.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-probability-calculator-project/build-a-probability-calculator-project" class="project-link" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                                FreeCodeCamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Multi-Function Calculator</h3>
-                        <p class="project-description">Advanced calculator with multiple mathematical functions in Python.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Google Colab</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1FZ1CeTzyOgrbM5E47yZq-IjBipL_HNg0?usp=sharing" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View on Colab
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Graphing Calculator</h3>
-                        <p class="project-description">Python application for creating and visualizing mathematical graphs.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Data Visualization</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1Vamucd_vzsHRHOTK3nSVWlCfMxSC5Wxy?usp=sharing" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View on Colab
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Three Math Games</h3>
-                        <p class="project-description">Interactive math games built with Python to enhance learning.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Game Development</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/195tRD1joW4KKa71CtSnSkjlyVVpqwMPh?usp=sharing" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View on Colab
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Financial Calculator</h3>
-                        <p class="project-description">Python application for financial calculations and analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Finance</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1smuYa1hXiNf2w7pzxyNc0d5TcT1duAm3?usp=sharing" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View on Colab
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Data Graph Explorer</h3>
-                        <p class="project-description">Python tool for exploring and visualizing data through graphs.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Data Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1RJyir9AMadja09r8Hmg-6d04V7K71zeX?usp=sharing" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                View on Colab
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just having a friendly chat about technology.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>deepthimahendran81@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>0762079963 / 0771557753</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Colombo, Sri Lanka</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/deepthi-aiml" class="social-link" target="_blank">
+                <div class="project-content">
+                    <h3 class="project-title">Institute of AI and Innovation</h3>
+                    <p class="project-description">Educational website built with HTML, CSS, JS, PHP and deployed on Vercel.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-iaii.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-IAII.git" class="project-link" target="_blank">
                             <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
+                            Source Code
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Cat-Translator.png" alt="Cat Language Translator">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cat Language Translator</h3>
+                    <p class="project-description">Fun web application that translates human language to cat sounds.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="project-links">
+                        <a href="https://my-web-project-purr-translation.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Purr-Translation" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Customer-feedback-survey.png" alt="Customer Feedback Survey">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Customer Feedback Survey</h3>
+                    <p class="project-description">Responsive survey form for collecting customer feedback.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                    <div class="project-links">
+                        <a href="https://my-web-project-feed-back-survey.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-FeedBackSurvey.git" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Technical-documentation.png" alt="Technical Documentation">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Technical Documentation</h3>
+                    <p class="project-description">Technical documentation page with responsive design.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-documentation.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Documentation" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Product-page.png" alt="Product Landing Page">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Product Landing Page</h3>
+                    <p class="project-description">E-commerce product landing page with modern design.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-product-page.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Product-Page" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Decoder.png" alt="Caesars Cipher">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Caesars Cipher</h3>
+                    <p class="project-description">Decoder application implementing Caesar cipher algorithm.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-decoder.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Decoder" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Calculator.png" alt="JavaScript Calculator">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">JavaScript Calculator</h3>
+                    <p class="project-description">Interactive calculator built with vanilla JavaScript.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-calculator.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Calculator" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Dungeon-crawler.png" alt="Dungeon Crawler Game">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Dungeon Crawler Game</h3>
+                    <p class="project-description">Roguelike dungeon crawler game with interactive gameplay.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-projects-dungeon-crawler.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Projects-Dungeon-Crawler" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Roman-number-convertor.png" alt="Roman Numeral Converter">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Roman Numeral Converter</h3>
+                    <p class="project-description">Convert numbers to Roman numerals and vice versa.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-roman-number-convert.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Roman-Number-Converter" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Drum-machine.png" alt="Drum Machine">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Drum Machine</h3>
+                    <p class="project-description">Interactive drum machine with multiple sound samples.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-drum-machine.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Drum-Machine" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Random-quote.png" alt="Random Quote Machine">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Random Quote Machine</h3>
+                    <p class="project-description">Generate random inspirational quotes with share functionality.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-random-quote.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Random-Quote" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Pomodoro.png" alt="25 + 5 Clock (Pomodoro)">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">25 + 5 Clock (Pomodoro)</h3>
+                    <p class="project-description">Pomodoro timer for productivity with session breaks.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-pomodoro.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Pomodoro" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Weather-app.png" alt="Local Weather App">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Local Weather App</h3>
+                    <p class="project-description">Weather application showing local weather conditions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-weather-app.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Weather-App" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Twitch-stream.png" alt="TwitchTV JSON API">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">TwitchTV JSON API</h3>
+                    <p class="project-description">Application using TwitchTV API to show stream information.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-twitch-stream.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Twitch-stream" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Home-page.png" alt="freeCodeCamp Forum">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">freeCodeCamp Forum</h3>
+                    <p class="project-description">Forum homepage clone for freeCodeCamp community.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-home-page.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-HomePage" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Tac-tic-toe.png" alt="Tic Tac Toe Game">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Tic Tac Toe Game</h3>
+                    <p class="project-description">Classic Tic Tac Toe game with interactive gameplay.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-tac-tic-toe.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Tac-tic-toe" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Memory-Game.png" alt="Memory Light Game">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Memory Light Game</h3>
+                    <p class="project-description">Memory game with light patterns and sequence matching.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-memory-game.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-memory-Game" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Markdown-Previewer.png" alt="Markdown Previewer">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Markdown Previewer</h3>
+                    <p class="project-description">Real-time Markdown to HTML preview application.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-markdown-previewer.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Markdown-Previewer" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Recipe-box.png" alt="Recipe Box">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Recipe Box</h3>
+                    <p class="project-description">Recipe management application with storage functionality.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-recipe-box.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Recipe-Box" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/Video-call.png" alt="Video Call Web App">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Video Call Web App</h3>
+                    <p class="project-description">WebRTC-based video calling application.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">WebRTC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-video-call.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Video-Call" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Visualization Projects -->
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="images/Bar-graph.png" alt="Bar Chart Visualization">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Bar Chart Visualization</h3>
+                    <p class="project-description">Data visualization using D3.js to create interactive bar charts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deepthi-Mahendran/pen/OPNbdQg" class="project-link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                            View on CodePen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="images/Scatter-plot.png" alt="Scatterplot Graph">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Scatterplot Graph</h3>
+                    <p class="project-description">Interactive scatterplot graph for data analysis and visualization.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deepthi-Mahendran/pen/VYamgda" class="project-link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                            View on CodePen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="images/Heat-map.png" alt="Heat Map Visualization">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Heat Map Visualization</h3>
+                    <p class="project-description">Heat map representation of data using color gradients.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deepthi-Mahendran/pen/bNpBzxL" class="project-link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                            View on CodePen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="images/Choropleth-map.png" alt="Choropleth Map">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Choropleth Map</h3>
+                    <p class="project-description">Geographical data visualization using choropleth mapping technique.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deepthi-Mahendran/pen/ByKQMMJ" class="project-link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                            View on CodePen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="images/Tree-map.png" alt="Treemap Diagram">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Treemap Diagram</h3>
+                    <p class="project-description">Hierarchical data visualization using treemap diagrams.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deepthi-Mahendran/pen/VYamgoP" class="project-link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                            View on CodePen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML & Python Projects - Projects without images will show placeholders -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Arithmetic Formatter</h3>
+                    <p class="project-description">Python program to format arithmetic problems for easy reading.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-an-arithmetic-formatter-project/build-an-arithmetic-formatter-project" class="project-link" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                            FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Time Calculator</h3>
+                    <p class="project-description">Python application to calculate time durations and conversions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-time-calculator-project/build-a-time-calculator-project" class="project-link" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                            FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Budget App</h3>
+                    <p class="project-description">Python application for personal budget tracking and management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-budget-app-project/build-a-budget-app-project" class="project-link" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                            FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Polygon Area Calculator</h3>
+                    <p class="project-description">Python program to calculate areas of various geometric shapes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-polygon-area-calculator-project/build-a-polygon-area-calculator-project" class="project-link" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                            FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Probability Calculator</h3>
+                    <p class="project-description">Python application for calculating probabilities in various scenarios.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-probability-calculator-project/build-a-probability-calculator-project" class="project-link" target="_blank">
+                            <i class="fab fa-free-code-camp"></i>
+                            FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Multi-Function Calculator</h3>
+                    <p class="project-description">Advanced calculator with multiple mathematical functions in Python.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Google Colab</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1FZ1CeTzyOgrbM5E47yZq-IjBipL_HNg0?usp=sharing" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Colab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Graphing Calculator</h3>
+                    <p class="project-description">Python application for creating and visualizing mathematical graphs.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1Vamucd_vzsHRHOTK3nSVWlCfMxSC5Wxy?usp=sharing" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Colab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Three Math Games</h3>
+                    <p class="project-description">Interactive math games built with Python to enhance learning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Game Development</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/195tRD1joW4KKa71CtSnSkjlyVVpqwMPh?usp=sharing" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Colab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Financial Calculator</h3>
+                    <p class="project-description">Python application for financial calculations and analysis.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Finance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1smuYa1hXiNf2w7pzxyNc0d5TcT1duAm3?usp=sharing" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Colab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Graph Explorer</h3>
+                    <p class="project-description">Python tool for exploring and visualizing data through graphs.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://colab.research.google.com/drive/1RJyir9AMadja09r8Hmg-6d04V7K71zeX?usp=sharing" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on Colab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Web Projects without images -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Tribute Page</h3>
+                    <p class="project-description">Responsive tribute page showcasing FreeCodeCamp project.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-tribute-page.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Tribute-Page" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Palindrome Checker</h3>
+                    <p class="project-description">Tool to check if words or phrases are palindromes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-palindrome-checker.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Palindrome-checker" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Game of Life</h3>
+                    <p class="project-description">Conway's Game of Life cellular automata implementation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-web-project-game-of-life.vercel.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/deepthi-aiml/My-Web-Project-Game-of-Life" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Deepthi Mahendran. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
